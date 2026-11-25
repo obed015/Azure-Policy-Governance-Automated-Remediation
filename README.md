@@ -1,6 +1,8 @@
-# Cloud Policy Compliance Dashboard
+# Azure Policy Governance & Automated Remediation
 
-Enterprise-style Azure governance platform that enforces policy compliance, performs automated remediation, and visualizes resource compliance across an Azure environment using Infrastructure as Code.
+A personal Azure cloud engineering project exploring how cloud governance, security compliance and automated resource remediation can be implemented using Azure Policy and Infrastructure as Code.
+
+The project combines Azure Management Groups, custom policy definitions, policy initiatives, managed identities, RBAC, Bicep, Azure Monitor, Log Analytics and KQL to detect, monitor and remediate non-compliant Azure resources.
 
 ---
 
@@ -12,9 +14,17 @@ Enterprise-style Azure governance platform that enforces policy compliance, perf
 
 ## Project Summary
 
-The **Cloud Policy Compliance Dashboard** demonstrates how Azure Policy can be used to enforce governance controls at scale, automatically remediate insecure configurations, and provide centralized compliance visibility.
+This project was built in my personal Azure tenant to develop a practical understanding of Azure governance, policy management, security compliance and automated remediation.
 
-This solution deploys governance policies at the **Management Group level**, evaluates resource compliance across subscriptions, remediates violations automatically, and visualizes results using Azure Monitor Workbooks.
+The implementation uses management-group-scoped custom Azure Policy definitions and initiatives to evaluate storage account configurations and identify resources that do not meet defined security requirements.
+
+Azure Policy's Audit and Modify effects are used to explore compliance detection and automated remediation, with managed identities and Azure RBAC providing the permissions required to correct non-compliant resource configurations.
+
+The governance and monitoring infrastructure is defined using Bicep, with Azure Monitor, Log Analytics, KQL, Azure Workbooks and Action Groups providing compliance reporting, monitoring and notifications.
+
+Throughout the project, I tested policy behaviour, investigated deployment and monitoring issues, configured remediation permissions and verified resource configuration changes using the Azure Portal and Azure CLI.
+
+The project was designed to help me understand how Azure governance controls are implemented, monitored, troubleshot and maintained in practice.
 
 ---
 
